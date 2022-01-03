@@ -13,7 +13,7 @@ func main() {
 	base := 10
 
 	var altura int = 14
-	var area int = base * altura
+	area := base * altura
 	fmt.Println("area:", area)
 
 	//ZERO values
@@ -22,4 +22,5 @@ func main() {
 	var c string
 	var d bool
 	fmt.Println(a, b, c, d)
+
 }
