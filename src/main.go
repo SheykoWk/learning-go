@@ -23,4 +23,16 @@ func main() {
 	var d bool
 	fmt.Println(a, b, c, d)
 
+	//operadores matematicos
+	x := 10
+	y := 50
+	fmt.Println("sum", x+y)
+	fmt.Println("rest", y-x)
+	fmt.Println("multiply", x*y)
+	fmt.Println("divide", y/x)
+	fmt.Println("module", y%x)
+	x++
+	fmt.Println("incremental", x)
+	y--
+	fmt.Println("decremental", y)
 }
