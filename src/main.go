@@ -3,36 +3,22 @@ package main
 import "fmt"
 
 func main() {
-	//Const declaration
-	const pi float64 = 3.1416
-	const pi2 = 3.141564
-	fmt.Println("pi:", pi)
-	fmt.Println("pi2:", pi2)
-	//Declaracion de variables enteras
+	//declaracion de variables
+	helloMessage := "Hello"
+	worldMessage := "world"
+	//Println
+	fmt.Println(helloMessage, worldMessage)
 
-	base := 10
+	//Printf
+	nombre := "Platzi"
+	cursos := 500
+	fmt.Printf("%s tiene más de %v cursos \n", nombre, cursos)
 
-	var altura int = 14
-	area := base * altura
-	fmt.Println("area:", area)
+	//Printf
+	message := fmt.Sprintf("%s tiene más de %d cursos", nombre, cursos)
+	println(message)
 
-	//ZERO values
-	var a int
-	var b float64
-	var c string
-	var d bool
-	fmt.Println(a, b, c, d)
+	//tipo de datos
+	fmt.Printf("helloMessage: %T", helloMessage)
 
-	//operadores matematicos
-	x := 10
-	y := 50
-	fmt.Println("sum", x+y)
-	fmt.Println("rest", y-x)
-	fmt.Println("multiply", x*y)
-	fmt.Println("divide", y/x)
-	fmt.Println("module", y%x)
-	x++
-	fmt.Println("incremental", x)
-	y--
-	fmt.Println("decremental", y)
 }
