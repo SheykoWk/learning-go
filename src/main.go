@@ -2,23 +2,29 @@ package main
 
 import "fmt"
 
+func normalFunction(message string) {
+	fmt.Println(message)
+}
+func tripleArgument(a, b int, c string) {
+	fmt.Println(a, b, c)
+}
+
+func returnValue(a int) int {
+	return a * 2
+}
+
+func doubleReturn(a int) (c, d int) {
+	return a, a * 2
+}
+
 func main() {
-	//declaracion de variables
-	helloMessage := "Hello"
-	worldMessage := "world"
-	//Println
-	fmt.Println(helloMessage, worldMessage)
+	normalFunction("Hola mundo")
+	tripleArgument(1, 2, "hola")
+	fmt.Println(returnValue(2))
 
-	//Printf
-	nombre := "Platzi"
-	cursos := 500
-	fmt.Printf("%s tiene más de %v cursos \n", nombre, cursos)
+	value1, value2 := doubleReturn(2)
+	value3, _ := doubleReturn(8)
 
-	//Printf
-	message := fmt.Sprintf("%s tiene más de %d cursos", nombre, cursos)
-	println(message)
-
-	//tipo de datos
-	fmt.Printf("helloMessage: %T", helloMessage)
-
+	fmt.Println(value1, value2)
+	fmt.Println(value3)
 }
