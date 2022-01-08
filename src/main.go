@@ -3,21 +3,22 @@ package main
 import "fmt"
 
 func main() {
-	//For conditional
-	for i := 0; i < 10; i++ {
-		fmt.Println(i)
+	valor1 := 1
+	valor2 := 2
+	if valor1 == 1  {
+		fmt.Println("es 1")
+	} else {
+		fmt.Println("no es 1")
 	}
-	fmt.Printf("\n")
-	//For while
-	counter := 0
-	for counter < 10{
-		fmt.Println(counter)
-		counter++
+	// With and
+	if valor1 == 1 && valor2 == 2{
+		fmt.Println("Es verdad")
+	} 
+
+	//with or
+	if valor1 == 0 ||  valor2 == 2{
+		fmt.Println("Alguna de las 2 es correcta")
 	}
-	//for forever
-	counterForever := 0
-	for {
-		fmt.Println(counterForever)
-		counterForever++
-	}
+
 }
+
