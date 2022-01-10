@@ -1,19 +1,15 @@
 package main
 
-import "fmt"
-
-type car struct {
-	brand string
-	year  int
-}
+import (
+	"fmt"
+	pk "go-basico/src/mypackage"
+)
 
 func main() {
-	myCar := car{brand: "Ford", year: 2022}
+	var myCar pk.CarPublic
+	myCar.Brand = "Ford"
+	myCar.Year = 1990
 	fmt.Println(myCar)
 
-	//Otra manera
-	var otherCar car
-	otherCar.brand = "Ferrari"
-	fmt.Println(otherCar)
-
+	pk.PrintMessage("holis")
 }
